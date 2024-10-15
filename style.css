@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'CustomFont';
+    src:url('./norse-bold-webfont.woff')
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.image_container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    position: relative;
+}
+
+.odin{
+    position: absolute;
+    width: 30%;
+    top:15rem;
+    left:5rem;
+
+}
+
+.card-paragraph{
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 20%;
+    color: white;
+    top: 12rem;
+    font-size: 6em;
+    text-align:center;
+    border: 2px solid red;
+    font-family: CustomFont;
+   
+
+}
