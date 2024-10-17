@@ -58,7 +58,7 @@ body{
 .credit{
     position: absolute;
     top:95%;
-    left: 25rem;
+    left: 27rem;
     color: white;
     font-size: 16px;
 }
@@ -71,22 +71,11 @@ body{
 
 /* Form Section */ 
 
-/* .writing_container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    height: 60%;
-} */
 
-.space1{
-    width: 100%;
-    height: 300px;
-    background-color: red;
-}
 
 
 .headings{
+    margin-top: 250px;
     font-size: 22px;
     width: 80%;
     display: flex;
@@ -98,39 +87,155 @@ body{
 form {
     width: 100%;
     height: 30rem;
-    background-color: purple;
     font-size: 30px;
    
 
 }
 
-#name_container{
-    display: flex;
-    padding: 15px;
-   
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 80px;
+    padding-top: 35px;
 
 }
 
-#ep_container{
-    display: flex;
-    padding: 15px;
-
+.form-container{
+    width:100%;
+    background-color: oldlace;
+    box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 
-#password_container{
+.name_container{
     display: flex;
-    padding: 15px;
+    margin-bottom: 10px;
 }
+
+.input-row{
+    display: flex; 
+}
+
+.name_container label{
+    width: 500px;
+    margin-right: 270px;
+    letter-spacing: 3px;
+    margin-left: 80px;
+}
+
+.input-row input{
+    margin-bottom: 10px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 250px;
+    margin-left: 80px;
+    gap: 10%;
+    font-size: 25px;   
+}
+
+.ep_container{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ep_container_input{
+    display: flex;
+}
+
+.ep_container label{
+    width: 500px;
+    margin-right: 270px;
+    letter-spacing: 3px;
+    margin-left: 80px;
+}
+
+.ep_container_input input{
+    margin-bottom: 10px;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 250px;
+    margin-left: 80px;
+    gap: 10%;
+    font-size: 25px;
+    padding: 10px;
+}
+/**/
+
+.password_container{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.password_input{
+    display: flex; 
+}
+
+.password_container label{
+    width: 500px;
+    margin-right: 270px;
+    letter-spacing: 3px;
+    margin-left: 80px;
+}
+
+.password_input input{
+    margin-bottom: 10px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 250px;
+    margin-left: 80px;
+    gap: 10%;
+    font-size: 25px;  
+    
+}
+
+
 
 button{
     background-color: #596D48;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
-    padding:15px;
+    padding:20px;
     padding-left:45px;
     padding-right: 45px;
-    font-size: 16px;
-    width:auto;
+    font-size: 30px;
+    width:400px;
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: 80px;
+}
 
+#lp{
+    margin-top: 35px;
+    margin-left: 80px;
+    font-weight: bold;
+} 
+
+#lp a {
+    color: #596D48;
+    text-decoration: none;
+    
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input{
+    border-color: #E5E7EB;
+}
+
+input:focus{
+    border-color: lightskyblue;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Show error message when password confirmation is invalid */
+input:invalid ~ .error-message {
+    display: block;
 }
